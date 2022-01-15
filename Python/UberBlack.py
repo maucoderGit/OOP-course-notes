@@ -1,10 +1,10 @@
 from car import Car
 
-class UberBlack(Car):
-    brand: str
-    model: str
+class UberBlack(car):
+    typeCarAccepted: list
+    seatsMaterial: list
 
-    def __init__(self, license, driver, brand, model):
+    def __init__(self, license, driver, typeCarAccepted, seatsMaterial):
         super.__init__(license, driver)
-        self.brand = brand
-        self.model = model
+        self.typeCarAccepted = typeCarAccepted
+        self.seatsMaterial = seatsMaterial
