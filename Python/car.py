@@ -3,7 +3,7 @@ from account import Account
 class Car:
     id: int
     license: str
-    driver: str = Account(str, str)
+    driver: object = Account(str, str, str, str)
     passenger: int
 
     def __init__(self, license ,driver):
