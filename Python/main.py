@@ -7,10 +7,14 @@ from UberX import UberX
 
 def run():
     uber : object = UberX("KASTH1", "Mauricio Gonzalez", "Tesla", "X")
-    UberX.id=1
+    uber.id = 1
     payment: object = Paypal("00e131k1", "Marketplace", "marketplace")
     payment.id = 1
+    car: object = Car("LJWKK", "Mauricio")
+    car.set_passenger(4)
+    uber.set_passenger(4)
 
+    print(vars(car))
     print(vars(uber))
     print(vars(payment))
 

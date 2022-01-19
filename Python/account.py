@@ -3,9 +3,9 @@ class Account:
     name: str
     document: str
     email: str
-    password: str
+    __password: str
 
-    def __init__(self, name, document, password, email):
+    def __init__(self, name: str, document: str, password: str, email: str):
         self.name = name
         self.email = email
         self.password = password
