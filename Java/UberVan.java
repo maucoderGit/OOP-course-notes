@@ -17,6 +17,7 @@ class UberVan extends Car{
     //         this.typeCarAccepted = typeCarAccepted;
     //     }
     
+    @Override
     public void setPassenger(Integer passenger){
         if (passenger >= 6){
             this.passenger = passenger;

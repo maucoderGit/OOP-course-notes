@@ -1,24 +1,23 @@
-from account import Account
+from driver import Driver
 
 class Car:
     id: int
     license: str
-    driver: object = Account(str, str)
-    __passenger: int
+    driver: object = Driver(str, str)
+    _passenger: int
 
     def __init__(self, license ,driver):
         self.license = license
         self.driver = driver
-        self.__passenger: int
 
     def get_passenger(self):
-        if self.__passenger != int:
-            print(f'{self.__passenger}')
+        if self._passenger != int:
+            print(f'{self._passenger}')
 
-    def set_passenger(self, __passenger):
-        if __passenger >= 4:
-            self.__passenger = __passenger
-            print(f'passengers asigned are: {self.__passenger}')
+    def set_passenger(self, _passenger):
+        if _passenger >= 4:
+            self._passenger = _passenger
+            print(f'passengers asigned are: {self._passenger}')
 
         else: 
-            print(f'minimun passenger need are: {self.__passenger}')
+            print(f'minimun passenger need are: {self._passenger}')
