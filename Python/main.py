@@ -10,7 +10,7 @@ def run():
     uber.id = 1
     payment: object = Paypal("00e131k1", "Marketplace", "marketplace")
     payment.id = 1
-    car: object = Car("LJWKK", "Mauricio")
+    car: object = Car("LJWKK", ("Mauricio", "KIESA"))
     car.set_passenger(4)
     uber.set_passenger(4)
 
